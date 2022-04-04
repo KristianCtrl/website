@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.text {
+	margin: 4% 10%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a> <a href="home.html">
+    <a href="survey.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SURVEY</a> <a href="survey.html">
+    <a href="results.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESULTS</a> <a href="results.html">
+    <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GITHUB</a> <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact">
+    <div class="w3-dropdown-hover w3-hide-small">
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="survey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SURVEY</a>
+  <a href="results.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESULTS</a>
+  <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GITHUB</a>
+</div>
+  
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    
+    <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h1 class="w3-wide" style='font-weight: 700;'>Results</h1>
+    <h2 class="w3-wide" style='margin-bottom: 5%;'>Results of vulnerability discovery &amp; hacking demonstration</h2>
+    <p class="w3-wide text">Please read below to view the results of the vulnerability testing and ethical hacking of a Yeelight smart light bulb.</p>
+    <p class="w3-wide text">Please note, ONLY THREE assets were used to sucessfully hack this smart device.</p>
+    <img src="light.jpg" alt="Yeelight" width="400" height="400">
+    <p class="w3-wide text">The smart light bulb used, a Yeelight Smart LED Bulb W3.</p>
+    <img src="discover.png" alt="Discover of Yeelight" width="700" height="100">
+    <p class="w3-wide text">Using a simple Python script, I was able to discover the Yeelight light bulb's information, including the IP address.</p>
+    <img src="on and off.png" alt="Turn off and on" width="750" height="350">
+    
+	<video width="500" height="500" controls="" style='margin: 4%;background: #6969690d;margin-bottom: 0;'>
+        <source src="turnandoff.mp4" type="video/mp4">
+    </video>
+    <p class="w3-wide text">Using just a command line, I am able to turn on and off the smart light bulb without any authentication. Other options could be changing the brightness and colours.</p>
+    <img src="rapid flash.png" alt="Rapid flash attack" width="400" height="1500">
+    <video width="500" height="500" controls="" style='margin: 4%;background: #6969690d;margin-bottom: 0;'>
+      <source src="rapid.mp4" type="video/mp4">
+	</video>
+<p class="w3-wide text">Using this Python script, without any authentication, I was able to attack this smart light bulb with a much more malicious and dangerous attack. Although I have toned down the speed and colours, this rapid flash attack could harm a person, starting an epileptic seizure.</p>
+<h2 class="w3-wide" style='margin-top: 10%;'>Results of Google Forms survey</h2>
+<p class="w3-wide text">Please read below to view the results of survey started for the general public regarding their knowledge on Internet of Things, Smart Devices and the vulnerabilities and risks that may occur within their smart home.</p>
+<p class="w3-wide text">Note: 144 participants entered, with a minimum of 107 responses.</p>
+<img src="age.png" alt="Age" width="570" height="250">
+<p class="w3-wide text">The first question on this survey was regarding the age group of each participant. The majority of these users were 18-24 and 25-34. </p>
+<img src="what are.png" alt="Knowledge of users on IoT" width="570" height="250">
+<p class="w3-wide text"> Almost 20% of the participants were unaware of the Internet of Things or Smart Devices. The participants that did not know were removed from the upcoming questions. </p>
+<img src="have.png" alt="Do they have smart devices?" width="570" height="250">
+<p class="w3-wide text"> With 144 responses, it was determined at least more than 70% of these participants have got a smart device. That is 100 of the 144.
+<p class="w3-wide text"> The next question was regarding why they use smart devices. The majority of these qualitative answers were the following: Ease of use, quality of life. automation and accessibility and listening to music.</p>
+<img src="how many.png" alt="How many smart devices" width="570" height="250">
+<p class="w3-wide text">Excluding the 21.5% of people with 0 devices, the average of smart devices in one household is 4, with 2 and 3 being the next highest amount.</p>
+<img src="trust.png" alt="Trust of users" width="570" height="250">
+<p class="w3-wide text">This chart displays that the majority of the participants do not have full trust in the smart devices that they have installed within their household. This is a worrying statistic, demonstrating that people will use devices that they do not fully trust.</p>
+<img src="secure.png" alt="How secure do you feel?" width="570" height="250">
+<p class="w3-wide text">Almost 40% of the participants believe they do not feel secure enough with their smart devices within their smart home.</p>
+<img src="same network.png" alt="Network segmentation" width="570" height="250">
+<p class="w3-wide text">To mitigate risks and to uphold a strong security within your smart home, network segmentation is needed as it will not have your import devices such as your phones and consoles on the same network as possible in-secure IoT devices such as smart lights. Over 80% of users do not do this.</p>
+<img src="worries.png" alt="Awareness of the issues" width="570" height="250">
+<p class="w3-wide text">With the previous data showing that the majority of users do not segment their network, it is worrying to display that almost 50% of the participants are not worried of the vulnerabilities or possible risks of their devices. With 40% aware and worried, is there a lack of information and support to help the general public mitigate risks in their home?</p>
+<p class="w3-wide text">Lastly, the two last questions focused on the participant's knowledge and awareness on what a potential hacker can do and what information they can discover if there are vulnerabilities. </p>
+<p class="w3-wide text">When it came to what hackers could do, most participants answered with that they were unsure or unaware and they they could jam their devices and take sensitive data from them.</p>
+<p class="w3-wide text">Sadly, one of the main answers was that users were unsure of what hackers could access, with another smaller majority saying that personal identifiable information could be used such as bank information, passwords and location of the device and user.</p>
+<h2 class="w3-wide text" style='margin-top: 10%;'>Full responses from the survey</h2>
+<p class="w3-wide">To view it in a full page, click below.</p> <a href="surveyresults.htm">Visit full survey results.</a>
+
+
+
+<center><iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6afGuRjHLwfJnkESncPFlKpzxbMAIh_I7DdSsh-QshanvUeCQFmu0xAWn20n_ulTzdBhsemyDuEXr/pubhtml?widget=true&amp;headers=false" width="800" height="500"></iframe></center>
+
