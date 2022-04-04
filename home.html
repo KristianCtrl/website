@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Hacking your smart home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">HOME</a> <a href="home.html">
+    <a href="survey.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SURVEY</a> <a href="survey.html">
+    <a href="results.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RESULTS</a> <a href="results.html">
+    <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GITHUB</a> <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact">
+    <div class="w3-dropdown-hover w3-hide-small">
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="survey.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SURVEY</a>
+  <a href="results.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RESULTS</a>
+  <a href="https://github.com/KristianCtrl/Yeelight-Bulb-Artefact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GITHUB</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="smarthome.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small;" style='background-color: #e7e7e761;width: 30%;margin-bottom:6%;'>
+      <h3 style="color:black;font-size: 32px;font-weight: 700;"> Hacking your smart home </h3>
+      <p><b style="color:black;">Are you safe and secure within your home?</b></p>   
+    </div>
+  </div>
+  
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">How secure is your smart home?</h2>
+    <p class="w3-opacity"><i>Dissertation project by Kristian Murphy</i></p>
+	<div style='background-color:black;background-color: rgb(0 0 0 / 5%);padding: 10px 40px 0px 40px;'>
+		<p class="w3-justify">This website has been created to display to readers the vulnerabilities and risks of their smart home devices, primarily smart light bulbs.</p>
+		<p class="w3-justify">
+		A survey was also conducted, please click Survey to access the survey that the general public used throughout this project.
+		Please click Results to view the results of an ethical and legal attack on a smart light bulb that emulates a threat actor within a network.</p>
+		<div class="w3-row w3-padding-32"></div>
+    </div>  
+
+  <!-- The Contact Section -->
+  <body>
+
+    <body onload="main()">
+        <section id="form">
+            <form action="http://google.com" id="contact-form" method="get">
+
+                <p style="font-size: 30px;">Contact me!</p>
+                <img class="contact-icons" src="user.png" alt="Image of person for login">
+                <p><input type="text" name="name" id="name" placeholder="Name" required></p>
+                <p id="nameRequiredError" class="error" style="display:none; color:red">
+                    Name is required
+                </p>
+                <img class="contact-icons" src="email.png" alt="Mail image">
+                <p><input type="email" name="email" id="email" placeholder="Email" required></p>
+                <p id="emailRequiredError" class="error" style="display:none;color:red">
+                    Email is required
+                </p>
+                <label for="suggestion"> Input your message here: </label></p>
+                <textarea name="suggestions" rows="5" cols="35" required></textarea>
+                <p><input class="button" type="submit" value="Submit"></p>
+            </form>
+        </section>
+    </body>
+  
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-linkedin w3-hover-opacity""></i>
+  <p class="w3-medium">Visit My <a href="https://www.linkedin.com/in/kristian-murphy-576268150/" target="https://www.linkedin.com/in/kristian-murphy-576268150/">Linkedin</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
